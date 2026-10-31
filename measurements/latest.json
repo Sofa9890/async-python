@@ -1,0 +1,234 @@
+{
+  "measured_at": "2026-10-31T08:54:32+03:00",
+  "python": "3.12.14",
+  "system": "Darwin",
+  "url_count": 20,
+  "note": "Сетевые времена — один реальный запуск; gather_nuance — модель без сети.",
+  "task_0": {
+    "slow": {
+      "seconds": 6.488694500178099,
+      "successful": 20
+    },
+    "gather_list": {
+      "seconds": 1.0598082500509918,
+      "successful": 20
+    },
+    "gather_inline": {
+      "seconds": 1.3387390417046845,
+      "successful": 20
+    }
+  },
+  "task_1": {
+    "sync": {
+      "seconds": 5.942136583849788,
+      "successful": 20
+    },
+    "async": {
+      "seconds": 1.1782075418159366,
+      "successful": 20
+    },
+    "speedup": 5.043370011612171
+  },
+  "task_2": {
+    "seconds": 12.02493879199028,
+    "results": [
+      {
+        "url": "https://picsum.photos/seed/0/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/1/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/2/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/3/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/4/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/5/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/6/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/7/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/8/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/9/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/10/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/11/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/12/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/13/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/14/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/15/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/16/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/17/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/18/800/600",
+        "status": 200
+      },
+      {
+        "url": "https://picsum.photos/seed/19/800/600",
+        "status": 200
+      }
+    ],
+    "errors": [
+      {
+        "url": "https://no-such-site.invalid",
+        "type": "ConnectError",
+        "message": ""
+      },
+      {
+        "url": "https://httpbin.org/delay/10",
+        "type": "TimeoutError",
+        "message": ""
+      }
+    ]
+  },
+  "task_3": {
+    "download_seconds": 1.9147904999554157,
+    "direct": {
+      "seconds": 2.6189006250351667,
+      "max_tick_gap_seconds": 2.6190115828067064
+    },
+    "processes": {
+      "seconds": 1.4569279160350561,
+      "max_tick_gap_seconds": 0.10123958298936486
+    },
+    "hashes_equal": true,
+    "images": 20
+  },
+  "gather_nuance": [
+    {
+      "count": 100,
+      "variant": "list",
+      "repeats": 3,
+      "retained_list_bytes": 920,
+      "live_children": 100,
+      "waiting_mib": 0.11402511596679688,
+      "seconds": 0.0012922920286655426,
+      "peak_mib": 0.12851333618164062
+    },
+    {
+      "count": 100,
+      "variant": "inline",
+      "repeats": 3,
+      "retained_list_bytes": 0,
+      "live_children": 100,
+      "waiting_mib": 0.113037109375,
+      "seconds": 0.0013998337090015411,
+      "peak_mib": 0.127532958984375
+    },
+    {
+      "count": 100,
+      "variant": "generator",
+      "repeats": 3,
+      "retained_list_bytes": 0,
+      "live_children": 100,
+      "waiting_mib": 0.1131134033203125,
+      "seconds": 0.0013276669196784496,
+      "peak_mib": 0.12760162353515625
+    },
+    {
+      "count": 10000,
+      "variant": "list",
+      "repeats": 3,
+      "retained_list_bytes": 85176,
+      "live_children": 10000,
+      "waiting_mib": 11.036140441894531,
+      "seconds": 0.1147239999845624,
+      "peak_mib": 12.556373596191406
+    },
+    {
+      "count": 10000,
+      "variant": "inline",
+      "repeats": 3,
+      "retained_list_bytes": 0,
+      "live_children": 10000,
+      "waiting_mib": 10.954959869384766,
+      "seconds": 0.11526520783081651,
+      "peak_mib": 12.47519302368164
+    },
+    {
+      "count": 10000,
+      "variant": "generator",
+      "repeats": 3,
+      "retained_list_bytes": 0,
+      "live_children": 10000,
+      "waiting_mib": 10.954875946044922,
+      "seconds": 0.11568900011479855,
+      "peak_mib": 12.475170135498047
+    },
+    {
+      "count": 50000,
+      "variant": "list",
+      "repeats": 3,
+      "retained_list_bytes": 444376,
+      "live_children": 50000,
+      "waiting_mib": 55.217994689941406,
+      "seconds": 0.6564998747780919,
+      "peak_mib": 62.85163879394531
+    },
+    {
+      "count": 50000,
+      "variant": "inline",
+      "repeats": 3,
+      "retained_list_bytes": 0,
+      "live_children": 50000,
+      "waiting_mib": 54.794193267822266,
+      "seconds": 0.6561517091467977,
+      "peak_mib": 62.42777633666992
+    },
+    {
+      "count": 50000,
+      "variant": "generator",
+      "repeats": 3,
+      "retained_list_bytes": 0,
+      "live_children": 50000,
+      "waiting_mib": 54.79413986206055,
+      "seconds": 0.6571487081237137,
+      "peak_mib": 62.4277229309082
+    }
+  ]
+}
